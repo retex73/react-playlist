@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234 --history-api-fallback"
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234 --history-api-fallback",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,10 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.25.0",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack": "^2.0.0",
+    "webpack-dev-server": "^1.16.1",
+    "@storybook/react": "^3.3.8",
+    "@storybook/addon-actions": "^3.3.8",
+    "@storybook/addon-links": "^3.3.8"
   }
 }
