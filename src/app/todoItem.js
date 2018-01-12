@@ -1,6 +1,7 @@
 // Create TodoItem component
-var React = require('react');
+import React from 'react';
 require('./css/todo-item.css');
+
 var TodoItem = React.createClass({
   render: function(){
     return(
@@ -17,5 +18,7 @@ var TodoItem = React.createClass({
     this.props.onDelete(this.props.item);
   }
 });
+
+
 
 module.exports = TodoItem;
