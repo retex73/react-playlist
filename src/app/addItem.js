@@ -17,4 +17,5 @@ var AddItem = React.createClass({
 });
 
 
-module.exports = AddItem;
+// module.exports = AddItem;
+export default AddItem;

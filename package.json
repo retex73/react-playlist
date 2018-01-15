@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
     "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234 --history-api-fallback",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -33,7 +33,7 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.25.0",
     "style-loader": "^0.13.1",
-    "webpack": "^2.0.0",
+    "webpack": "^2.0.8",
     "webpack-dev-server": "^1.16.1",
     "@storybook/react": "^3.3.8",
     "@storybook/addon-actions": "^3.3.8",

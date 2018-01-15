@@ -6,7 +6,7 @@ const TodoItem = require('./todoItem');
 const AddItem = require('./addItem');
 
 
-const TodoComponent = React.createClass({
+var TodoComponent = React.createClass({
   getInitialState: function(){
     return {
       todos: ['wash up', 'eat some cheese', 'take a nap', 'buy flowers'],
@@ -64,4 +64,5 @@ const TodoComponent = React.createClass({
   }
 });
 
-module.exports = TodoComponent;
+// module.exports = TodoComponent;
+export default TodoComponent;
